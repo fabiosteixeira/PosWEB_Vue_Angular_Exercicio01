@@ -17,7 +17,7 @@ export default {
     div{
         display: flex;
         justify-content: center;
-        margin: 10px;
+        margin: 10px 0px;
     }
 
     a{
