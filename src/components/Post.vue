@@ -1,12 +1,15 @@
 <template>
-    <div>
-        <div class="container redBorder">
+    <div class="redBorder">
+        <div>
+            {{post.title}}
+        </div>
+        <div class="container">
             <div>
                 <img :src="getImgUrl(post.imgPath)" alt="">
             </div>
             <div>
                 <div>{{post.text}}</div>
-                <!-- <div>{{post.imgPath}}</div> -->
+                <div>{{post.imgPath}}</div>
             </div>
         </div>
     </div>
@@ -30,5 +33,9 @@ export default {
     .container {
         display: flex;
         align-items: center;
+    }
+
+    img{
+        padding: 10px;
     }
 </style>
