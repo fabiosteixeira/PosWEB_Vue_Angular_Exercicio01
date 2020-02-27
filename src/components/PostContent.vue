@@ -1,5 +1,5 @@
 <template>
-    <ul id="example-1">
+    <ul id="postList">
       <li v-for="item in items" v-bind:key="item.id">
         <Post
           :post="item"
@@ -22,5 +22,13 @@ export default {
 </script>
 
 <style scoped>
+  ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+  }
 
+  li{
+    margin-bottom: 10px;
+  }
 </style>

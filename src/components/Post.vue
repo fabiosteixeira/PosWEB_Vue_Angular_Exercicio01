@@ -1,8 +1,14 @@
 <template>
     <div>
-        <img :src="getImgUrl(post.imgPath)" alt="">
-        <div>{{post.text}}</div>
-        <div>{{post.imgPath}}</div>
+        <div class="container redBorder">
+            <div>
+                <img :src="getImgUrl(post.imgPath)" alt="">
+            </div>
+            <div>
+                <div>{{post.text}}</div>
+                <!-- <div>{{post.imgPath}}</div> -->
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,3 +25,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .container {
+        display: flex;
+        align-items: center;
+    }
+</style>
